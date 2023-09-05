@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 const QuizApp = () => {
-    const [gameState, setGameState] = 'menu';
+    const [gameState, setGameState] = useState('menu');
     return (
         <>
             <h1 style={{textAlign: 'center'}}>Quiz App</h1>
