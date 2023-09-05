@@ -1,9 +1,9 @@
 import React from "react";
 
-const QuizApp = () =>{
-    return(
+const QuizApp = () => {
+    return (
         <>
-            <h1>Quiz App</h1>
+            <h1 style={{alignItems: 'center'}}>Quiz App</h1>
         </>
     )
 }
