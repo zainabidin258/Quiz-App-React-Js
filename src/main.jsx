@@ -1,4 +1,4 @@
-import QuizApp from '../components/QuizApp'
+import QuizApp from './Components/QuizApp'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 
