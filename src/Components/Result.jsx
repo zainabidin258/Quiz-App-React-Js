@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Quiz() {
+function Result() {
   return (
     <div>
-      Quiz
+      Result
     </div>
   )
 }
 
-export default Quiz
+export default Result
