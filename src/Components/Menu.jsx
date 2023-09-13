@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { QuizContext } from '../Helpers/Context'
+import "../Styles/App.css"
 
 function Menu() {
+  const {gameState, setGameState} = useContext(QuizContext);
   return (
-    <div>
-      <h4 style={{textAlign: 'center'}}>
-        Main Menu
-    </h4>
+    <div className='Menu'>
+      <button onClick={ () => {
+        setGameState("quiz")
+      }}>
+        Start
+      </button>
     </div>
   )
 }
