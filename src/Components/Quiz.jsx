@@ -4,8 +4,23 @@ import { QuizContext } from '../Helpers/Context';
 import { Questions } from '../Helpers/Questions'
 
 function Quiz() {
+  const { score , setScore, setGameState }  = useContext(QuizContext);
   const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [options, setOptions] = useState('');
+  const [optionChosen, setOptionChosen] = useState('');
+
+  const nextQuestion = () => {
+    if(Questions[currentQuestion].asnwer == optionChosen){
+      setScore(score + 1)
+    }
+    setCurrentQuestion(currentQuestion + 1)
+  }
+
+  const finishQuiz = () => {
+    if(Questions[currentQuestion].asnwer == optionChosen){
+      setScore(score + 1)
+    }
+    setGameState('result')
+  }
   return (
     <>
       <div className='Quiz'>
@@ -34,6 +49,14 @@ function Quiz() {
           {Questions[currentQuestion].optionD}
         </button>
       </div>
+      {
+        currentQuestion == Questions.length -1 ? (
+          <button onClick={finishQuiz}>Finish</button>
+        ) : (
+          <button onClick={nextQuestion}>Next</button>
+        ) 
+      }
+        
       </div>
     </>
   )
