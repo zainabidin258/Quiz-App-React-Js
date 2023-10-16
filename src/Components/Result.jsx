@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import { useState } from 'react'
 import { QuizContext } from '../Helpers/Context'
-import "../Styles/App.css"
 import { Questions } from '../Helpers/Questions'
 
 
