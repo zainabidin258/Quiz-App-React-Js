@@ -13,9 +13,9 @@ function Result() {
   return (
     <div className='EndScreen'>
       {" "}
-      <h1>Quiz Finished</h1>
+      <h1>Quiz Ended</h1>
       <h3> {score} / {Questions.length} </h3>
-      <button onClick={restartQuiz}> Restart Quiz</button>
+      <button onClick={restartQuiz}> Start Quiz Again</button>
     </div>
   )
 }
