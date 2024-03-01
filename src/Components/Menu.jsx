@@ -8,7 +8,7 @@ function Menu() {
       <button onClick={ () => {
         setGameState("quiz")
       }}>
-        Start
+        Start the game!
       </button>
     </div>
   )
